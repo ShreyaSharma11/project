@@ -1,3 +1,9 @@
+.container{
+	width:fit-content;
+	margin:0 auto;
+	height: auto;
+	  position: relative;
+}
 .outer1{
 	width:fit-content;
 	margin:0 auto;
@@ -314,8 +320,7 @@ position: relative;
   box-shadow: 0 8px 19px 0 rgba(0, 0, 0, 0.16);
   width: 214px;
   height: 230px;
-      position: relative;
-                top: -24px;
+      position: relative;    top: -29px;
 	    left: -5px;
   display:inline-block;
 }
