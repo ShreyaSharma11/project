@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="try.css">
+
+
+<style>
+
+
+</style>
+</head>
+
+<body>
+<div class="outer1">
+	<div class="content">
+	<p class="looking-for-a-lollip">Looking for a <br>lollipop alternative?</p>
+	<p class="bodyy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+	
+	<div class= "but1">
+	<p class="cta-text1" color ="#FFFFFF">Primary CTA</p></div>
+	<div class= "but2">
+	<p class="cta-text2" color="#31373D">Secondary CTA</p></div>
+	</div>
+	<div class="imag">
+	<img src="glo.png" style= "width:281px height:331px">
+	</div>
+</div>
+<div class="outer2" style="background-image:url('BG.png')">
+
+<p class="this-is-a-heading-in">This is a heading in<br>
+two lines
+</p>
+
+<img class="table" src="Group 6.png" >
+</div>
+
+<div class="outer3">
+<p class="compare-pricing-toda">Compare pricing today!</p>
+<p class="lorem-ipsum-is-simpl">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+
+<div id="rect" class="rectangle">
+<div  id="rec1"  class="rectangle1"><p style="text-align:center;" class="25-serving">25 Serving</p>
+</div><div id="rec2"  class="rectangle1"><p style="text-align:center;"   class="25-serving">50 Serving</p>
+</div><div  id="rec3"   class="rectangle1 active"><p style="text-align:center;"   class="25-serving">100 Serving</p>
+</div><div  id="rec4" class="rectangle1"><p style="text-align:center;"  class="25-serving">200 Serving</p></div>
+</div>
+<div class="main">
+
+<p class="annual">Annual</p>
+<div class="togg" id="tgg"><div id="circle"class="circle"></div></div> 
+<div class="monthly">Monthly</div>
+</div>
+<div class="rectangle-copy-17">
+<div class="maini">
+<div class="content1">
+<p class="lollipop">lollipop</p>
+<div class="lo">
+<p id="l1" class="abc">$100</p><p id="l2" class="body-copy-35">Per month</p></div><p id="l3" class="body-copy-5">For 100  serving</p>
+</div>
+<div class="rectangle-copy-18"></div>
+<div class="content2">
+<p class="lollipop">Icecandy</p>
+<div class="lo">
+<p id="i1" class="abc">$200</p><p id="i2" class="body-copy-35">Per month</p></div><p id="i3"class="body-copy-5">For 100  serving</p>
+</div>
+</div>
+</div>
+
+<div class="rectangle-copy-19">
+<div class="content3">
+<p class="lollipop">Your savings
+with lollipop</p>
+<div class="lo">
+<p id="o1"class="abc" >$200</p><p id ="o2"class="body-copy-35">Per month</p></div>
+</div></div>
+
+
+</div>
+
+<div class="outer4">
+
+<p class="heres-what-our-cust">Here’s what our customers have to say </p>
+
+<img class ="round"src="per.png" style="width:300px">
+
+<p class="lorem-ipsum-is-simply">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+<p class="raja-ram">Raja Ram</p>
+<p class="tip-world">Tip World</p>
+<div class="oval"></div>
+<div class="oval1"></div>
+<div class="oval2"></div>
+<div class="oval3"></div>
+</div><br><br>
+<div class="outer5">
+	<div class="content">
+<p class="loved-by-users-reco-copy-2">Loved by users, <br>
+recommended by experts</p>
+	
+	<p class="bodyy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+<div class="shape"><p class="cta-text11" color ="#FFFFFF">Primary CTA</p></div></div>
+	
+	
+<div class="imag">
+	<img src="Group 4.png" width="281" height="331">
+	</div>
+</div>
+<script>
+var x = 100;
+var z = 0;
+var R1 = document.getElementById('rec1');
+var R2 = document.getElementById('rec2');
+var R3 = document.getElementById('rec3');
+var R4 = document.getElementById('rec4');
+document.getElementById("rec1").addEventListener("click",  function() { shreya(25);changes();});
+document.getElementById("rec2").addEventListener("click",  function() { shreya(50);changes();});
+document.getElementById("rec3").addEventListener("click",  function() { shreya(100);changes();});
+document.getElementById("rec4").addEventListener("click",  function() { shreya(200);changes();});
+document.getElementById("tgg").addEventListener("click",  function() { tog();changes();});
+
+	function shreya(a)
+	{
+		if(a == 25)
+		{
+			R1.className = "active";
+			R2.className = "rectangle1";
+			R3.className = "rectangle1";
+			R4.className = "rectangle1";
+		}else if(a == 50)
+		{
+			R1.className = "rectangle1";
+			R2.className = "active";
+			R3.className = "rectangle1";
+			R4.className = "rectangle1";
+		}else if(a == 100)
+		{
+			R1.className ="rectangle1"; 
+			R2.className = "rectangle1";
+			R3.className = "active";
+			R4.className = "rectangle1";
+		}else if(a == 200)
+		{
+				R1.className = "rectangle1";
+			R2.className = "rectangle1";
+			R3.className = "rectangle1";
+			R4.className = "active";
+		}	
+		x = a
+	}
+	function tog(){
+    
+      if (!z) {
+        $("#circle").animate({right: "0px"});
+        z = 1;
+      }
+      else {
+         $("#circle").animate({right: "-20px"});
+         z = 0;    
+      }
+
+	}
+		function changes(){
+		if(z == 0)
+		{
+			$("#l1")[0].innerHTML = '$'+ ( x*1);
+			$("#l2")[0].innerHTML = "For "+ x +" serving";
+			$("#i1")[0].innerHTML = '$'+ ( x*2);
+			$("#i2")[0].innerHTML = "For "+ x +" serving";
+			$("#o1")[0].innerHTML = '$'+ ( x*2 - x*1);
+			$("#l3")[0].innerHTML = "Per Month";
+			$("#i3")[0].innerHTML = "Per Month";
+			$("#o2")[0].innerHTML = "Per Month";
+		}
+		if(z == 1)
+		{
+			$("#l1")[0].innerHTML = '$'+ ( x*.5*12);
+			$("#l2")[0].innerHTML = "For "+ x +" serving";
+			$("#i1")[0].innerHTML = '$'+ ( x*1*12);
+			$("#i2")[0].innerHTML = "For "+ x +" serving";
+			$("#o1")[0].innerHTML = '$'+ ( x*1 - x*.5)*12;
+			$("#l3")[0].innerHTML = "Anually";
+			$("#i3")[0].innerHTML = "Anually";
+			$("#o2")[0].innerHTML = "Anually";
+
+		}
+	}
+
+</script>
+</body>
+
+</html>
